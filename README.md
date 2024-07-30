@@ -1,5 +1,6 @@
 # farmcollector
-FarmCollector is a Spring Boot application designed to collect and manage agricultural data for farms. It allows farmers to record planting and harvesting information for each field and crop. The application generates reports on expected versus actual product yields for individual farms and crop types.
+FarmCollector is a Spring Boot application designed to collect and manage agricultural data for farms. It allows farmers to record planting and harvesting information for each field and crop. The application generates reports on expected versus actual product yields for individual farms and crop types.<br /> 
+
 Installation
 1. Clone the repository:
 Bash
@@ -15,29 +16,29 @@ spring.datasource.password=your_password
 Bash
 mvn clean install
 
-**Usage**
+**Usage**<br />
 Start the Spring Boot application.
 Use the provided API endpoints to create, retrieve, update, and delete farm, field, crop, planted, and harvested data.
 Access reports through the web interface.
 
-**API Endpoints**
-PlantedData Endpoints:
-POST /plantedData
-GET /plantedData
-GET /plantedData/{id}
-PUT /plantedData/{id}
-DELETE /plantedData/{id}
+**API Endpoints**<br />
+PlantedData Endpoints:<br />
+POST /plantedData<br />
+GET /plantedData<br />
+GET /plantedData/{id}<br />
+PUT /plantedData/{id}<br />
+DELETE /plantedData/{id}<br />
 
 HarvestedData Endpoints:
-POST /harvestedData
-GET /harvestedData
-GET /harvestedData/{id}
-PUT /harvestedData/{id}
-DELETE /harvestedData/{id}
+POST /harvestedData<br />
+GET /harvestedData<br />
+GET /harvestedData/{id}<br />
+PUT /harvestedData/{id}<br />
+DELETE /harvestedData/{id}<br />
 
 **Reports:**
-GET /reports/farm/{farmId}/{season}
-GET /reports/crop/{cropId}/{season}
+GET /reports/farm/{farmId}/{season}<br />
+GET /reports/crop/{cropId}/{season}<br />
 Reports
 Farm and crop reports are accessible through the web interface.
 
